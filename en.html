@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Monument – English</title>
-
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -13,7 +12,6 @@
       margin: 0;
       padding: 20px;
     }
-
     .container {
       max-width: 600px;
       margin: 0 auto;
@@ -23,30 +21,39 @@
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
       text-align: center;
     }
-
     h1 {
       color: #2d3748;
       font-size: 28px;
       margin-bottom: 5px;
     }
-
     h2 {
       color: #667eea;
       font-size: 20px;
       margin-bottom: 25px;
     }
-
-    p {
+    .label {
       color: #718096;
       font-size: 16px;
       margin-bottom: 20px;
     }
-
     audio {
       width: 100%;
       margin-bottom: 30px;
     }
-
+    /* Audioguide text: left-aligned and readable */
+    .audioguide {
+      text-align: left;
+      color: #2d3748;
+      font-size: 16px;
+      line-height: 1.7;
+      margin: 0 0 30px;
+    }
+    .audioguide p {
+      margin: 0 0 16px;
+    }
+    .audioguide p:last-child {
+      margin-bottom: 0;
+    }
     .btn-back {
       display: inline-block;
       text-decoration: none;
@@ -57,39 +64,38 @@
       font-weight: 600;
       transition: background 0.3s ease;
     }
-
     .btn-back:hover {
       background: #5a67d8;
     }
   </style>
 </head>
-
 <body>
-
   <div class="container">
-
     <h1>City monument</h1>
     <h2>English</h2>
-
-    <p>Audioguide:</p>
-
+    <p class="label">Audioguide:</p>
     <audio controls>
       <source src="EN_MARQUIGNY.mp3" type="audio/mpeg">
       Your browser does not support audio.
     </audio>
-<p>
-<br>  The war memorial is located on Place Fernand-Marquigny, in the very center of Soissons, near the covered market and the cathedral.
-<br>Inaugurated in 1935, it pays tribute to soldiers who died for France while also recounting the history of the city, from the end of Antiquity to the two World Wars.
-<br>This stone monument, pyramidal in shape, features several sculpted scenes. One can recognize Clovis and the episode of the Vase of Soissons, as well as Joan of Arc alongside Charles VII, in memory of her visit to the city in 1429. 
-<br>Another scene depicts the 1918 exodus, with the cathedral partially collapsed in the background.
-<br>The monument thus combines remembrance of conflicts with major figures from local history.
-<br>The square itself was profoundly transformed after the First World War, with widened streets and the reconstruction of stone buildings, as well as the construction of new buildings with elegant stone façades.
-<br>Finally, the monument underwent a particular evolution: an initial statue, representing a woman nicknamed “the White Lady,” was deemed inappropriate. It was replaced by an allegorical figure carrying the torch of memory, symbolizing remembrance of the fallen soldiers.
 
-</p>
-    <a href="index.html" class="btn-back">← Return to the homepage.</a>
+    <div class="audioguide">
+      <p>The war memorial is located on Place Fernand-Marquigny, in the very center of Soissons, near the covered market and the cathedral.</p>
 
+      <p>Inaugurated in 1935, it pays tribute to soldiers who died for France while also recounting the history of the city, from the end of Antiquity to the two World Wars.</p>
+
+      <p>This stone monument, pyramidal in shape, features several sculpted scenes. One can recognize Clovis and the episode of the Vase of Soissons, as well as Joan of Arc alongside Charles VII, in memory of her visit to the city in 1429.</p>
+
+      <p>Another scene depicts the 1918 exodus, with the cathedral partially collapsed in the background.</p>
+
+      <p>The monument thus combines remembrance of conflicts with major figures from local history.</p>
+
+      <p>The square itself was profoundly transformed after the First World War, with widened streets and the reconstruction of stone buildings, as well as the construction of new buildings with elegant stone façades.</p>
+
+      <p>Finally, the monument underwent a particular evolution: an initial statue, representing a woman nicknamed “the White Lady,” was deemed inappropriate. It was replaced by an allegorical figure carrying the torch of memory, symbolizing remembrance of the fallen soldiers.</p>
+    </div>
+
+    <a href="index.html" class="btn-back">← Return to the homepage</a>
   </div>
-
 </body>
 </html>
