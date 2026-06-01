@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Monument – Français</title>
-
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -13,7 +12,6 @@
       margin: 0;
       padding: 20px;
     }
-
     .container {
       max-width: 600px;
       margin: 0 auto;
@@ -23,30 +21,39 @@
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
       text-align: center;
     }
-
     h1 {
       color: #2d3748;
       font-size: 28px;
       margin-bottom: 5px;
     }
-
     h2 {
       color: #667eea;
       font-size: 20px;
       margin-bottom: 25px;
     }
-
-    p {
+    .label {
       color: #718096;
       font-size: 16px;
       margin-bottom: 20px;
     }
-
     audio {
       width: 100%;
       margin-bottom: 30px;
     }
-
+    /* Bloc de texte de l'audioguide : aligné à gauche et lisible */
+    .audioguide {
+      text-align: left;
+      color: #2d3748;
+      font-size: 16px;
+      line-height: 1.7;
+      margin: 0 0 30px;
+    }
+    .audioguide p {
+      margin: 0 0 16px;
+    }
+    .audioguide p:last-child {
+      margin-bottom: 0;
+    }
     .btn-back {
       display: inline-block;
       text-decoration: none;
@@ -57,37 +64,38 @@
       font-weight: 600;
       transition: background 0.3s ease;
     }
-
     .btn-back:hover {
       background: #5a67d8;
     }
   </style>
 </head>
-
 <body>
-
   <div class="container">
-
     <h1>Monument de la ville</h1>
     <h2>Français</h2>
-
-    <p>Audioguide:</p>
-
+    <p class="label">Audioguide :</p>
     <audio controls>
       <source src="FR_MARQUIGNY.mp3" type="audio/mpeg">
       Le navigateur ne supporte pas le lecteur.
     </audio>
-<p><br/><br/>Le monument aux morts se situe place Fernand-Marquigny, en plein centre de Soissons, à proximité du marché couvert et de la cathédrale.
-<br/><br/>Inauguré en 1935, il rend hommage aux soldats morts pour la France, tout en retraçant l’histoire de la ville, de la fin de l’Antiquité jusqu’aux deux guerres mondiales.
-<br/><br/>Ce monument en pierre, de forme pyramidale, présente plusieurs scènes sculptées. On y reconnaît Clovis et l’épisode du Vase de Soissons, mais aussi Jeanne d’Arc aux côtés de Charles VII, en souvenir de son passage dans la ville en 1429. 
-<br/><br/>Une autre scène évoque l’exode de 1918, avec la cathédrale en partie effondrée en arrière-plan.
-<br/><br/>Le monument mêle ainsi mémoire des conflits et grandes figures de l’histoire locale.
-<br/><br/>La place elle-même a été profondément transformée après la Première Guerre mondiale, avec l’agrandissement des rues et la reconstruction des bâtiments en pierre la construction de nouveaux immeubles avec de belles façades en pierre. 
-Enfin, le monument a connu une évolution particulière : une première statue, représentant une femme surnommée « la Dame Blanche », a été jugée inappropriée. Elle a été remplacée par une figure allégorique portant le flambeau de la mémoire, symbole du souvenir des soldats disparus.
-</p>
+
+    <div class="audioguide">
+      <p>Le monument aux morts se situe place Fernand-Marquigny, en plein centre de Soissons, à proximité du marché couvert et de la cathédrale.</p>
+
+      <p>Inauguré en 1935, il rend hommage aux soldats morts pour la France, tout en retraçant l’histoire de la ville, de la fin de l’Antiquité jusqu’aux deux guerres mondiales.</p>
+
+      <p>Ce monument en pierre, de forme pyramidale, présente plusieurs scènes sculptées. On y reconnaît Clovis et l’épisode du Vase de Soissons, mais aussi Jeanne d’Arc aux côtés de Charles VII, en souvenir de son passage dans la ville en 1429.</p>
+
+      <p>Une autre scène évoque l’exode de 1918, avec la cathédrale en partie effondrée en arrière-plan.</p>
+
+      <p>Le monument mêle ainsi mémoire des conflits et grandes figures de l’histoire locale.</p>
+
+      <p>La place elle-même a été profondément transformée après la Première Guerre mondiale, avec l’agrandissement des rues et la construction de nouveaux immeubles aux belles façades en pierre.</p>
+
+      <p>Enfin, le monument a connu une évolution particulière : une première statue, représentant une femme surnommée « la Dame Blanche », a été jugée inappropriée. Elle a été remplacée par une figure allégorique portant le flambeau de la mémoire, symbole du souvenir des soldats disparus.</p>
+    </div>
+
     <a href="index.html" class="btn-back">← Revenir à l'accueil</a>
-
   </div>
-
 </body>
 </html>
