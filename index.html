@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Monument de la ville</title>
-
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -13,7 +12,6 @@
       margin: 0;
       padding: 20px;
     }
-
     .container {
       max-width: 600px;
       margin: 0 auto;
@@ -23,28 +21,23 @@
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
       text-align: center;
     }
-
     h1 {
       color: #2d3748;
       font-size: 28px;
       margin-bottom: 20px;
     }
-
     p {
       color: #718096;
       font-size: 16px;
       margin-bottom: 30px;
     }
-
     ul {
       list-style: none;
       padding: 0;
     }
-
     li {
       margin-bottom: 15px;
     }
-
     .lang-btn {
       display: block;
       text-decoration: none;
@@ -56,22 +49,39 @@
       font-weight: 600;
       transition: background 0.3s ease, transform 0.2s ease;
     }
-
     .lang-btn:hover {
       background: #5a67d8;
       transform: translateY(-2px);
     }
+    .home-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin: 30px auto 0;
+      padding: 12px 24px;
+      font-size: 15px;
+      font-weight: 600;
+      color: white;
+      text-decoration: none;
+      background: rgba(255, 255, 255, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      border-radius: 10px;
+      backdrop-filter: blur(4px);
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+    .home-link:hover {
+      background: rgba(255, 255, 255, 0.35);
+      transform: translateY(-2px);
+    }
+    .home-wrapper {
+      text-align: center;
+    }
   </style>
 </head>
-
 <body>
-
   <div class="container">
-
     <h1>La Place Fernand Marquigny</h1>
-
     <p>Choisissez votre langue :</p>
-
     <ul>
       <li><a href="fr.html" class="lang-btn">🇫🇷 Français</a></li>
       <li><a href="en.html" class="lang-btn">🇬🇧 English</a></li>
@@ -79,7 +89,11 @@
       <li><a href="ar.html" class="lang-btn">🇸🇦 العربية</a></li>
       <li><a href="tr.html" class="lang-btn">🇹🇷 Türkçe</a></li>
     </ul>
+  </div>
 
+  <!-- Retour vers l'accueil principal -->
+  <div class="home-wrapper">
+    <a href="../index.html" class="home-link">← Retour à l'accueil principal</a>
   </div>
 
 </body>
