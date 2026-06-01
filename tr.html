@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="tr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Anıt – Türkçe</title>
-
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -13,7 +12,6 @@
       margin: 0;
       padding: 20px;
     }
-
     .container {
       max-width: 600px;
       margin: 0 auto;
@@ -23,30 +21,39 @@
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
       text-align: center;
     }
-
     h1 {
       color: #2d3748;
       font-size: 28px;
       margin-bottom: 5px;
     }
-
     h2 {
       color: #667eea;
       font-size: 20px;
       margin-bottom: 25px;
     }
-
-    p {
+    .label {
       color: #718096;
       font-size: 16px;
       margin-bottom: 20px;
     }
-
     audio {
       width: 100%;
       margin-bottom: 30px;
     }
-
+    /* Sesli rehber metni: sola hizalı ve okunaklı */
+    .audioguide {
+      text-align: left;
+      color: #2d3748;
+      font-size: 16px;
+      line-height: 1.7;
+      margin: 0 0 30px;
+    }
+    .audioguide p {
+      margin: 0 0 16px;
+    }
+    .audioguide p:last-child {
+      margin-bottom: 0;
+    }
     .btn-back {
       display: inline-block;
       text-decoration: none;
@@ -57,42 +64,38 @@
       font-weight: 600;
       transition: background 0.3s ease;
     }
-
     .btn-back:hover {
       background: #5a67d8;
     }
   </style>
 </head>
-
 <body>
-
   <div class="container">
-
     <h1>Şehir anıtı</h1>
     <h2>Türkçe</h2>
-
-    <p>Sesli rehber:</p>
-
+    <p class="label">Sesli rehber:</p>
     <audio controls>
       <source src="TR_MARQUIGNY.mp3" type="audio/mpeg">
       Tarayıcınız ses dosyalarını desteklemiyor.
     </audio>
-<p>Şehitler Anıtı, Soissons'un tam merkezinde, kapalı pazar ve katedralin yakınında, Fernand-Marquigny Meydanı'nda yer almaktadır.
 
-  </br>1935 yılında açılışı yapılan anıt, Fransa uğruna hayatını kaybeden askerlere saygı gösterirken, Antik Çağ'ın sonlarından iki dünya savaşına kadar uzanan şehrin tarihini de anlatmaktadır.
+    <div class="audioguide">
+      <p>Şehitler Anıtı, Soissons'un tam merkezinde, kapalı pazar ve katedralin yakınında, Fernand-Marquigny Meydanı'nda yer almaktadır.</p>
 
- </br>Piramit şeklindeki bu taş anıt, çeşitli oyma sahneler barındırmaktadır. Anıtta Clovis ve Soissons Vazosu olayı ile birlikte, 1429'da kente yaptığı ziyaretin anısına Charles VII'nin yanında Jeanne d’Arc da tasvir edilmiştir. 
-Arka planda kısmen yıkılmış katedralin yer aldığı bir başka sahne ise 1918'deki göçü anımsatmaktadır.
+      <p>1935 yılında açılışı yapılan anıt, Fransa uğruna hayatını kaybeden askerlere saygı gösterirken, Antik Çağ'ın sonlarından iki dünya savaşına kadar uzanan şehrin tarihini de anlatmaktadır.</p>
 
- </br>Anıt, bu şekilde savaşların anısını ve yerel tarihin önemli şahsiyetlerini bir araya getirmektedir.
+      <p>Piramit şeklindeki bu taş anıt, çeşitli oyma sahneler barındırmaktadır. Anıtta Clovis ve Soissons Vazosu olayı ile birlikte, 1429'da kente yaptığı ziyaretin anısına Charles VII'nin yanında Jeanne d’Arc da tasvir edilmiştir.</p>
 
- </br>Meydanın kendisi de Birinci Dünya Savaşı'ndan sonra, caddelerin genişletilmesi, taş binaların yeniden inşası ve güzel taş cepheli yeni binaların inşa edilmesiyle büyük ölçüde dönüştürülmüştür. 
+      <p>Arka planda kısmen yıkılmış katedralin yer aldığı bir başka sahne ise 1918'deki göçü anımsatmaktadır.</p>
 
- </br>Son olarak, anıtın ilginç bir gelişme yaşadı: “Beyaz Kadın” lakaplı bir kadını tasvir eden ilk heykel uygunsuz bulunarak kaldırıldı. Onun yerine, kaybolan askerlerin anısını simgeleyen hafıza meşalesini taşıyan alegorik bir figür yerleştirildi.
-</p>
+      <p>Anıt, bu şekilde savaşların anısını ve yerel tarihin önemli şahsiyetlerini bir araya getirmektedir.</p>
+
+      <p>Meydanın kendisi de Birinci Dünya Savaşı'ndan sonra, caddelerin genişletilmesi, taş binaların yeniden inşası ve güzel taş cepheli yeni binaların inşa edilmesiyle büyük ölçüde dönüştürülmüştür.</p>
+
+      <p>Son olarak, anıt ilginç bir gelişme yaşadı: “Beyaz Kadın” lakaplı bir kadını tasvir eden ilk heykel uygunsuz bulunarak kaldırıldı. Onun yerine, kaybolan askerlerin anısını simgeleyen hafıza meşalesini taşıyan alegorik bir figür yerleştirildi.</p>
+    </div>
+
     <a href="index.html" class="btn-back">← Resepsiyona dön</a>
-
   </div>
-
 </body>
 </html>
