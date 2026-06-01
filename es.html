@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Monument – Español</title>
-
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -13,7 +12,6 @@
       margin: 0;
       padding: 20px;
     }
-
     .container {
       max-width: 600px;
       margin: 0 auto;
@@ -23,30 +21,39 @@
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
       text-align: center;
     }
-
     h1 {
       color: #2d3748;
       font-size: 28px;
       margin-bottom: 5px;
     }
-
     h2 {
       color: #667eea;
       font-size: 20px;
       margin-bottom: 25px;
     }
-
-    p {
+    .label {
       color: #718096;
       font-size: 16px;
       margin-bottom: 20px;
     }
-
     audio {
       width: 100%;
       margin-bottom: 30px;
     }
-
+    /* Texto de la audioguía: alineado a la izquierda y legible */
+    .audioguide {
+      text-align: left;
+      color: #2d3748;
+      font-size: 16px;
+      line-height: 1.7;
+      margin: 0 0 30px;
+    }
+    .audioguide p {
+      margin: 0 0 16px;
+    }
+    .audioguide p:last-child {
+      margin-bottom: 0;
+    }
     .btn-back {
       display: inline-block;
       text-decoration: none;
@@ -57,43 +64,38 @@
       font-weight: 600;
       transition: background 0.3s ease;
     }
-
     .btn-back:hover {
       background: #5a67d8;
     }
   </style>
 </head>
-
 <body>
-
   <div class="container">
-
     <h1>Monument de la ville</h1>
     <h2>Español</h2>
-
-    <p>Presentación audio:</p>
-
+    <p class="label">Presentación audio:</p>
     <audio controls>
       <source src="audio/es.mp3" type="audio/mpeg">
       Tu navegador no soporta el audio.
     </audio>
-<p><br/>El monumento a los muertos se sitúa plaza Fernand-Marquigny, en pleno centro de Soissons, cerca del mercado cubierto y de la catedral.
 
-<br/>Inaugurado en 1935, rinde homenaje a los soldados muertos por Francia, mientras recorre la historia de la ciudad, desde el fin de la Antigüedad hasta las dos guerras mundiales.
+    <div class="audioguide">
+      <p>El monumento a los muertos se sitúa en la plaza Fernand-Marquigny, en pleno centro de Soissons, cerca del mercado cubierto y de la catedral.</p>
 
-<br/>Este monumento de piedra, de forma piramidal, presenta varias escenas esculpidas. Se reconoce a Clovis y el episodio del Vaso de Soissons, pero también a Juana de Arco al lado de Carlos VII, en recuerdo de su paso por la ciudad en 1429.
+      <p>Inaugurado en 1935, rinde homenaje a los soldados muertos por Francia, mientras recorre la historia de la ciudad, desde el fin de la Antigüedad hasta las dos guerras mundiales.</p>
 
-<br/>Otra escena evoca el éxodo de 1918, con la catedral parcialmente derrumbada en el fondo.
+      <p>Este monumento de piedra, de forma piramidal, presenta varias escenas esculpidas. Se reconoce a Clovis y el episodio del Vaso de Soissons, pero también a Juana de Arco al lado de Carlos VII, en recuerdo de su paso por la ciudad en 1429.</p>
 
-<br/>El monumento mezcla así memoria de los conflictos y grandes figuras de la historia local.
+      <p>Otra escena evoca el éxodo de 1918, con la catedral parcialmente derrumbada en el fondo.</p>
 
-<br/>La plaza misma fue profundamente transformada después de la Primera Guerra Mundial, con la ampliación de las calles y la reconstrucción de los edificios de piedra, así como la construcción de nuevos inmuebles con hermosas fachadas de piedra.
+      <p>El monumento mezcla así memoria de los conflictos y grandes figuras de la historia local.</p>
 
-<br/>Finalmente, el monumento conoció una evolución particular: una primera estatua, que representaba a una mujer apodada «la Dama Blanca», fue considerada inapropiada. Fue reemplazada por una figura alegórica que lleva la antorcha de la memoria, símbolo del recuerdo de los soldados desaparecidos.
-</p>
+      <p>La plaza misma fue profundamente transformada después de la Primera Guerra Mundial, con la ampliación de las calles y la reconstrucción de los edificios de piedra, así como la construcción de nuevos inmuebles con hermosas fachadas de piedra.</p>
+
+      <p>Finalmente, el monumento conoció una evolución particular: una primera estatua, que representaba a una mujer apodada «la Dama Blanca», fue considerada inapropiada. Fue reemplazada por una figura alegórica que lleva la antorcha de la memoria, símbolo del recuerdo de los soldados desaparecidos.</p>
+    </div>
+
     <a href="index.html" class="btn-back">← Volver al inicio</a>
-
   </div>
-
 </body>
 </html>
